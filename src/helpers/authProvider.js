@@ -12,10 +12,7 @@ export default async (type, params) => {
       params: { email: username, password }
     })
       .then(res => {
-        localStorage.setItem("jwt", res.jwt);
-        console.log("====================================");
-        console.log(res);
-        console.log("====================================");
+        localStorage.setItem("jwt", res.data.jwt);
         return Promise.resolve();
       })
       .catch(e => Promise.reject(e));
