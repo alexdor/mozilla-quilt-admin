@@ -13,6 +13,9 @@ export default async (type, params) => {
     })
       .then(res => {
         localStorage.setItem("jwt", res.jwt);
+        console.log("====================================");
+        console.log(res);
+        console.log("====================================");
         return Promise.resolve();
       })
       .catch(e => Promise.reject(e));
