@@ -30,7 +30,7 @@ class App extends Component {
             create={StoriesCreate}
           />
           <Resource
-            name="admin/admin"
+            name="admin/admins"
             list={AdminList}
             edit={AdminEdit}
             create={AdminCreate}
