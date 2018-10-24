@@ -6,7 +6,6 @@ export const AdminList = props => (
     <Datagrid>
       <TextField source="id" />
       <TextField type="email" source="email" />
-      <TextField type="password" source="password" />
       <EditButton />
     </Datagrid>
   </List>
