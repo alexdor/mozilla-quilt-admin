@@ -36,7 +36,12 @@ export const StoriesList = props => (
       <TextField source="picture" />
       <TextField source="user_name" />
       <TextField source="user_photo" />
-      <ReferenceField label="User" source="user_id" reference="admin/users">
+      <ReferenceField
+        label="User"
+        source="user_id"
+        reference="admin/users"
+        allowEmpty
+      >
         <TextField source="name" />
       </ReferenceField>
       <EditButton />
@@ -60,7 +65,12 @@ export const StoriesEdit = props => (
       <TextInput source="picture" />
       <TextInput source="user_name" />
       <TextInput source="user_photo" />
-      <ReferenceInput label="User" source="user_id" reference="admin/users">
+      <ReferenceInput
+        label="User"
+        source="user_id"
+        reference="admin/users"
+        allowEmpty
+      >
         <SelectInput optionText="display_name" />
       </ReferenceInput>
     </SimpleForm>
@@ -78,7 +88,12 @@ export const StoriesCreate = props => (
       <TextInput source="picture" />
       <TextInput source="user_name" />
       <TextInput source="user_photo" />
-      <ReferenceInput label="User" source="user_id" reference="admin/users">
+      <ReferenceInput
+        label="User"
+        source="user_id"
+        reference="admin/users"
+        allowEmpty
+      >
         <SelectInput optionText="display_name" />
       </ReferenceInput>
     </SimpleForm>
