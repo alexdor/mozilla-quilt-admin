@@ -25,7 +25,7 @@ export let conf = {
 
 if (process.env.REACT_APP_ENV === "development") {
   conf = {
-    apiBaseUrl: "http://localhost:3000/api/",
+    apiBaseUrl: "http://localhost:3001/api/",
     endpoints
   };
 }

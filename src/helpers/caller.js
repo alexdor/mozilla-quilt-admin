@@ -15,6 +15,7 @@ export const makeCall = ({ call, params = {}, urlParams, authUrl }) => {
     },
     method: jobConf.type
   };
+
   if (authUrl) {
     requestObject.credentials = "include";
   }
