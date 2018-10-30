@@ -35,7 +35,6 @@ export const StoriesList = props => (
       <TextField source="im_able" />
       <TextField source="picture" />
       <TextField source="user_name" />
-      <TextField source="user_photo" />
       <ReferenceField
         label="User"
         source="user_id"
@@ -64,14 +63,13 @@ export const StoriesEdit = props => (
       <TextInput source="im_able" />
       <TextInput source="picture" />
       <TextInput source="user_name" />
-      <TextInput source="user_photo" />
       <ReferenceInput
         label="User"
         source="user_id"
         reference="admin/users"
         allowEmpty
       >
-        <SelectInput optionText="display_name" />
+        <SelectInput optionText="name" />
       </ReferenceInput>
     </SimpleForm>
   </Edit>
@@ -87,14 +85,13 @@ export const StoriesCreate = props => (
       <TextInput source="im_able" />
       <TextInput source="picture" />
       <TextInput source="user_name" />
-      <TextInput source="user_photo" />
       <ReferenceInput
         label="User"
         source="user_id"
         reference="admin/users"
         allowEmpty
       >
-        <SelectInput optionText="display_name" />
+        <SelectInput optionText="name" />
       </ReferenceInput>
     </SimpleForm>
   </Create>

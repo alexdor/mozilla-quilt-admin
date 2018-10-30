@@ -29,7 +29,7 @@ export const UserList = props => (
   </List>
 );
 const UserTitle = ({ record }) => {
-  return <span>Post {record ? `"${record.email}"` : ""}</span>;
+  return <span>User {record ? `${record.name} ${record.surname}` : ""}</span>;
 };
 export const UserEdit = props => (
   <Edit title={<UserTitle />} {...props}>
