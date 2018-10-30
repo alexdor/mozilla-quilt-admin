@@ -12,7 +12,7 @@ export const AdminList = props => (
 );
 
 const AdminTitle = ({ record }) => {
-  return <span>Post {record ? `"${record.repository_url}"` : ""}</span>;
+  return <span>Admin {record ? `"${record.email}"` : ""}</span>;
 };
 
 export const AdminEdit = props => (

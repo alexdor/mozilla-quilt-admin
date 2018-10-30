@@ -49,7 +49,7 @@ export const StoriesList = props => (
 );
 
 const StoriesTitle = ({ record }) => {
-  return <span>Post {record ? `"${record.type}"` : ""}</span>;
+  return <span>Story {record ? `"${record.id}"` : ""}</span>;
 };
 
 export const StoriesEdit = props => (
