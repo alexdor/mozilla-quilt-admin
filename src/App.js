@@ -5,6 +5,8 @@ import { Admin, Resource } from 'react-admin';
 import { AdminCreate, AdminEdit, AdminList } from './Admin';
 import authProvider from './helpers/authProvider';
 import dataProvider from './helpers/dataProvider';
+import { ImagesCreate, ImagesEdit, ImagesList } from './Images';
+import { QandACreate, QandAEdit, QandAList } from './QA';
 import { StoriesCreate, StoriesEdit, StoriesList } from './Stories';
 import { UserCreate, UserEdit, UserList } from './Users';
 
@@ -40,6 +42,18 @@ class App extends Component {
             list={UserList}
             edit={UserEdit}
             create={UserCreate}
+          />
+          <Resource
+            name="admin/qa"
+            list={QandAList}
+            edit={QandAEdit}
+            create={QandACreate}
+          />
+          <Resource
+            name="admin/images"
+            list={ImagesList}
+            edit={ImagesEdit}
+            create={ImagesCreate}
           />
         </Admin>
       </div>
